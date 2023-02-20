@@ -22,4 +22,6 @@
 # 2 - Escreva um programa que recebe o nome e
 # a idade de uma pessoa e verifica se ela pode votar nas eleições.
 
+nome = str(input('Digite o seu nome: '))
+idade = int(input('Digite a sua idade: '))
 
