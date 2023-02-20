@@ -148,13 +148,12 @@
 # caso contrário, deve imprimir "Não forma um triângulo retângulo".
 
 
-import math
 
-cateto1 = int(input('Digite o valor do cateto 1: '))
-cateto2 = int(input('Digite o valor do cateto 2: '))
-hipotenusa = math.sqrt(cateto1**2 + cateto2**2)
+hipotenusa = int(input('Digite o valor da hipotenusa: '))
+valor2 = int(input('Digite o valor do valor 2: '))
+valor3 = int(input('Digite o valor da valor 3: '))
                   
-if (hipotenusa > cateto1 + cateto2):
+if (hipotenusa**2 == valor2**2 + valor3**2):
     print('Os números digitados formam um triângulo retângulo.')
 else:
     print('Os números digitados não formam um triângulo retângulo.')
