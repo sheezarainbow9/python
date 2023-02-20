@@ -113,27 +113,50 @@
 # deve tratar os casos de divisão por zero e de valores
 # inválidos para os operandos.
 
-num1 = int(input('Digite o 1° número: '))
-num2 = int(input('Digite o 2° número: '))
+# num1 = int(input('Digite o 1° número: '))
+# num2 = int(input('Digite o 2° número: '))
 
-operador = input(
-    'Escolha o símbolo da operação a ser realizada:\n(+, -, *, /, %) - ')
+# operador = input(
+#     'Escolha o símbolo da operação a ser realizada:\n(+, -, *, /, %) - ')
 
-if operador == "+":
-    resultado = num1 + num2
-elif operador == "-":
-    resultado = num1 - num2
-elif operador == "*":
-    resultado = num1 * num2
-elif operador == "/":
-    if num1 == 0:
-        resultado = 0
-    else:
-        resultado = num1 / num2
-elif operador == "%":
-    resultado = num1 % num2
-else:
-    print("Operação inválida! Tenta novamente.")
-    resultado = 0
+# if operador == "+":
+#     resultado = num1 + num2
+# elif operador == "-":
+#     resultado = num1 - num2
+# elif operador == "*":
+#     resultado = num1 * num2
+# elif operador == "/":
+#     if num1 == 0:
+#         resultado = 0
+#     else:
+#         resultado = num1 / num2
+# elif operador == "%":
+#     resultado = num1 % num2
+# else:
+#     print("Operação inválida! Tenta novamente.")
+#     resultado = 0
     
-print(f'Resultado: {resultado:.0f}.')
+# print(f'Resultado: {resultado:.0f}.')
+
+
+# 10 - Faça um programa que receba três valores inteiros
+# e verifique se eles podem formar um triângulo retângulo.
+#Para isso, o programa deve utilizar o Teorema de Pitágoras:
+# a² = b² + c², onde 'a' é a hipotenusa, e 'b' e 'c' são os catetos.
+# Se os valores informados formarem um triângulo retângulo,
+# o programa deve imprimir "Forma um triângulo retângulo",
+# caso contrário, deve imprimir "Não forma um triângulo retângulo".
+
+
+import math
+
+cateto1 = int(input('Digite o valor do cateto 1: '))
+cateto2 = int(input('Digite o valor do cateto 2: '))
+hipotenusa = math.sqrt(cateto1**2 + cateto2**2)
+                  
+if (hipotenusa > cateto1 + cateto2):
+    print('Os números digitados formam um triângulo retângulo.')
+else:
+    print('Os números digitados não formam um triângulo retângulo.')
+
+    
