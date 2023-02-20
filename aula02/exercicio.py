@@ -52,10 +52,10 @@
 
 # lista = []
 
-# for n in range(0, 4): 
+# for n in range(0, 4):
 #     lista.append(int(input('Digite um número: ')))
 
-# print (f'O maior número da lista é: {max(lista)}.') 
+# print (f'O maior número da lista é: {max(lista)}.')
 
 
 # 5 - Escreva um programa que verifica se um número é par ou ímpar.
@@ -91,7 +91,7 @@
 # if (nota1 + nota2 / 2 >= 7):
 #     print('\nAprovada(o)!')
 # else:
-#     print('\nReprovada(o)!')      
+#     print('\nReprovada(o)!')
 
 
 # 8 - Escreva um programa que recebe uma letra
@@ -101,8 +101,39 @@
 # vogais = ['a', 'e', 'i', 'o', 'u']
 
 # if (letra not in vogais):
-#     print(f'"{letra}" é uma consoante.')   
+#     print(f'"{letra}" é uma consoante.')
 # else:
-#     print(f'"{letra}" é uma vogal.') 
+#     print(f'"{letra}" é uma vogal.')
 
+
+# 9 - Faça um programa que receba dois valores inteiros
+# e um operador aritmético (+, -, *, / ou %) e realize a
+# operação correspondente. Se o operador for inválido, o
+# programa deve imprimir "Operador inválido". O programa
+# deve tratar os casos de divisão por zero e de valores
+# inválidos para os operandos.
+
+num1 = int(input('Digite o 1° número: '))
+num2 = int(input('Digite o 2° número: '))
+
+operador = input(
+    'Escolha o símbolo da operação a ser realizada:\n(+, -, *, /, %) - ')
+
+if operador == "+":
+    resultado = num1 + num2
+elif operador == "-":
+    resultado = num1 - num2
+elif operador == "*":
+    resultado = num1 * num2
+elif operador == "/":
+    if num1 == 0:
+        resultado = 0
+    else:
+        resultado = num1 / num2
+elif operador == "%":
+    resultado = num1 % num2
+else:
+    print("Operação inválida! Tenta novamente.")
+    resultado = 0
     
+print(f'Resultado: {resultado:.0f}.')
