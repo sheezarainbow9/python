@@ -71,9 +71,38 @@
 # 6 - Escreva um programa que verifica se um número
 # é positivo, negativo ou zero.
 
+# num = float(input('Digite um número: '))
 
-    
+# if (num < 0):
+#     print('Número negativo.')
+# elif (num > 0):
+#     print('Número positivo.')
+# else:
+#     print('Número igual a zero.')
 
-            
+
+# 7 - Escreva um programa que calcula a média
+# de dois números e retorna "Aprovado" se a
+# média for maior ou igual a 7 e "Reprovado" caso contrário.
+
+# nota1 = float(input('Digite a 1a nota: '))
+# nota2 = float(input('Digite a 2a nota: '))
+
+# if (nota1 + nota2 / 2 >= 7):
+#     print('\nAprovada(o)!')
+# else:
+#     print('\nReprovada(o)!')      
+
+
+# 8 - Escreva um programa que recebe uma letra
+# e verifica se é uma vogal ou uma consoante.
+
+# letra = str(input('Digite uma letra: '))
+# vogais = ['a', 'e', 'i', 'o', 'u']
+
+# if (letra not in vogais):
+#     print(f'"{letra}" é uma consoante.')   
+# else:
+#     print(f'"{letra}" é uma vogal.') 
 
     
