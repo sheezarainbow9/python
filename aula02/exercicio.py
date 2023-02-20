@@ -22,12 +22,58 @@
 # 2 - Escreva um programa que recebe o nome e
 # a idade de uma pessoa e verifica se ela pode votar nas eleições.
 
-nome = str(input('Digite o seu nome: '))
-idade = int(input('Digite a sua idade: '))
+# nome = str(input('Digite o seu nome: '))
+# idade = int(input('Digite a sua idade: '))
 
-if (idade >= 18) and (idade <= 64):
-    print(f'{nome} tem {idade} anos e pode votar.')
-elif (idade >= 16 and idade <= 17) or (idade >= 65):
-    print(f'{nome} tem {idade} anos e o voto é facultativo.')
-else:
-    print(f'{nome} ainda não pode votar.')
+# if (idade >= 18) and (idade <= 64):
+#     print(f'{nome} tem {idade} anos e pode votar.')
+# elif (idade >= 16 and idade <= 17) or (idade >= 65):
+#     print(f'{nome} tem {idade} anos e o voto é facultativo.')
+# else:
+#     print(f'{nome} ainda não pode votar.')
+
+
+# 3 - Escreva um programa que recebe um número e retorna
+# a sua raiz quadrada, caso o número seja positivo, e uma
+# mensagem de erro, caso contrário.
+
+# import math
+
+# num = float(input('Digite um número: '))
+
+# if num < 0:
+#     print('Número negativo!')
+# else:
+#     raiz = math.sqrt(num)
+#     print(f'\nA raiz quadrada de {num:.0f} é {raiz:.0f}.\n')
+
+
+# 4 - Escreva um programa que recebe alguns números e retorna o maior número.
+
+# lista = []
+
+# for n in range(0, 4): 
+#     lista.append(int(input('Digite um número: ')))
+
+# print (f'O maior número da lista é: {max(lista)}.') 
+
+
+# 5 - Escreva um programa que verifica se um número é par ou ímpar.
+
+# num = int(input('Digite um número: '))
+
+# if (num % 2 == 0):
+#     print(f'O número {num} é par.')
+# else:
+#     print(f'O número {num} é ímpar.')
+
+
+# 6 - Escreva um programa que verifica se um número
+# é positivo, negativo ou zero.
+
+
+    
+
+            
+
+    
