@@ -147,11 +147,9 @@
 # o programa deve imprimir "Forma um triângulo retângulo",
 # caso contrário, deve imprimir "Não forma um triângulo retângulo".
 
-
-
 hipotenusa = int(input('Digite o valor da hipotenusa: '))
-valor2 = int(input('Digite o valor do valor 2: '))
-valor3 = int(input('Digite o valor da valor 3: '))
+valor2 = int(input('Digite o valor 2: '))
+valor3 = int(input('Digite o valor 3: '))
                   
 if (hipotenusa**2 == valor2**2 + valor3**2):
     print('Os números digitados formam um triângulo retângulo.')
