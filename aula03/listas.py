@@ -25,17 +25,34 @@ lista4 = ['primeiro', 'segundo', 'terceiro']
 # fatiando listas:
 # nomeDaLista[start:stop:step]
 # execute um print por vez!
-print(lista3)
-print('')
-print(lista3[2:6:2])
-print('')
-print(lista3[:3])
-print('')
-print(lista3[-1:])
-print('')
-print('Imprimindo de 2 em 2: ', lista3[::2])
-print('')
-print(lista3[: :]) # imprime a lista normal
-print('')
-print(len(lista3[5][2])) # imprime a quantidade de caracteres do 2° elemento da lista dentro da lista
-print('')
+# print(lista3)
+# print('')
+# print(lista3[2:6:2])
+# print('')
+# print(lista3[:3])
+# print('')
+# print(lista3[-1:])
+# print('')
+# print('Imprimindo de 2 em 2: ', lista3[::2])
+# print('')
+# print(lista3[: :]) # imprime a lista normal
+# print('')
+# print(len(lista3[5][2])) # imprime a quantidade de caracteres do 2° elemento da lista dentro da lista
+# print('')
+# print(lista3[::-1]) # imprime ao contrário
+
+# adicionando elementos em numa lista
+print(lista1)
+lista1.append('Python')
+lista1.append('Java')
+lista1.append('Php')
+lista1.append('C#')
+print(lista1)
+
+# inserir elementos em uma posição específica
+lista1.insert(2, 'C++') # vai inserir no segundo índice[2]
+print(lista1)
+
+# remover um elemento pelo seu valor
+lista1.remove('Java')
+print(lista1)
