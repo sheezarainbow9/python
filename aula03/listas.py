@@ -25,3 +25,17 @@ lista4 = ['primeiro', 'segundo', 'terceiro']
 # fatiando listas:
 # nomeDaLista[start:stop:step]
 # execute um print por vez!
+print(lista3)
+print('')
+print(lista3[2:6:2])
+print('')
+print(lista3[:3])
+print('')
+print(lista3[-1:])
+print('')
+print('Imprimindo de 2 em 2: ', lista3[::2])
+print('')
+print(lista3[: :]) # imprime a lista normal
+print('')
+print(len(lista3[5][2])) # imprime a quantidade de caracteres do 2° elemento da lista dentro da lista
+print('')
