@@ -44,7 +44,7 @@
 d = {'apples': 15, 'bananas': 35, 'grapes': 12}
 
 # print(d['banana']) - erro, banana não existe no dic
-        
+
 # d['oranges'] = 20
 # print(len(d)) - acrescenta oranges e dá quantos itens tem no dic (4)
 
