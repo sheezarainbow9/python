@@ -10,7 +10,7 @@
 # declarando dicionários
 # dic = {}
 # print(type(dic))
-# dic_pernambuco = {'Sport': 41, 'Santa Cruz': 29, 'Náutico': 21}
+dic_pernambuco = {'Sport': 41, 'Santa Cruz': 29, 'Náutico': 21}
 # print(dic_pernambuco)
 
 # adicionando um elemento no dicionário (chave:valor)
@@ -40,8 +40,13 @@
 # dic_pernambuco.update(dic_paulista)
 # print(dic_pernambuco)
 
+# convertendo um dicionário em uma lista
+print(list(dic_pernambuco))
+print(list(dic_pernambuco.values()))
+
+
 # O que acontece em cada sequencia de comandos a seguir?
-d = {'apples': 15, 'bananas': 35, 'grapes': 12}
+#d = {'apples': 15, 'bananas': 35, 'grapes': 12}
 
 # print(d['banana']) - erro, banana não existe no dic
 
