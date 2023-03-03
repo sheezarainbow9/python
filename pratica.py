@@ -34,8 +34,8 @@
 
 # print(palavra)
 
-frase = str(input('Digite uma frase: '))
+# frase = str(input('Digite uma frase: '))
 
-nova_frase = [nova.lower() for nova in frase.split()]
-nova_frase.sort()
-print(nova_frase)
+# nova_frase = [nova.lower() for nova in frase.split()]
+# nova_frase.sort()
+# print(nova_frase)
