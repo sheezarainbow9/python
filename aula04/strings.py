@@ -58,6 +58,6 @@ print(msg)
 # usando fatiamento para reverter uma string
 # print('reverso:', msg[::-1])
 
-# removendo espaços em branco de uma string
+# removendo espaços em branco desnecessários de uma string
 msg1 = ' Hello, World! '
 print(msg1.strip())
