@@ -39,3 +39,4 @@
 # nova_frase = [nova.lower() for nova in frase.split()]
 # nova_frase.sort()
 # print(nova_frase)
+
