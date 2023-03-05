@@ -40,3 +40,9 @@
 # nova_frase.sort()
 # print(nova_frase)
 
+
+# palavra = input("Digite seu nome: ").upper()
+# lista = list(palavra)
+# lista_ordenada = sorted(lista)
+
+# print(lista_ordenada)
