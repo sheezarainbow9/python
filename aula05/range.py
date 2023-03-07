@@ -40,7 +40,7 @@
 
 # percorrendo uma string
 # for elemento in 'STRING':
-  # print('Estamos no elemento', elemento)
+# print('Estamos no elemento', elemento)
 
 # percorrendo os índices de uma string
 # for elemento in range(len('STRING')):
@@ -60,14 +60,88 @@
 # for letra in texto:
 #   if letra =='l':
 #    contagem += 1
-   
+
 # print(f'A contagem de ocorrências da letra é {contagem}.')
 
 # iterar sobre uma lista e filtrar os elementos pares
-numeros = [1, 2, 3, 4, 5]
-pares = []
-for num in numeros:
-  if num % 2 == 0:
-    pares.append(num)
+# numeros = [1, 2, 3, 4, 5]
+# pares = []
+# for num in numeros:
+#   if num % 2 == 0:
+#     pares.append(num)
 
-print(f'Os números pares são {pares}.')
+# print(f'Os números pares são {pares}.')
+
+# While:
+
+# produto = 0
+# while produto < 4:
+#     p = str(input('Digite o nome do produto: '))
+#     v = float(input('Digite o valor do produto: R$ '))
+#     produto += 1
+
+# fruta = []
+# valor = []
+# while True:
+#   fruta.append(str(input('Digite o nome fruta: ')))
+#   valor.append(float(input('Digite o valor: R$ ')))
+#   condition = str(input('Deseja continuar? (s/n) ')).lower()
+#   if condition == 'n':
+#     break
+
+# print(f'Fruta: {fruta}\nValor: {valor}')
+
+# percorrendo lista de números
+# elemento = 0
+# while elemento <= len([1, 2, 3, 4, 5, 6]):
+#   print(f'Estamos no elemento: {elemento}')
+#   elemento += 1
+
+# percorrendo uma string
+# s = 'STRING'
+# indice = 0
+# while indice in range(len(s)):
+#   print(f'Estamos no elemento: {s[indice]}')
+#   indice += 1
+
+# jogo de adivinhação
+# num_secreto = 42
+# palpite = None
+# while palpite != num_secreto:
+#   palpite = int(input('Adivinhe o número: '))
+#   if palpite < num_secreto:
+#     print('Tente um número maior!')
+#   elif palpite > num_secreto:
+#     print('Tente um número menor!')
+
+# print('Parabéns, você acertou!')
+
+# i = 1
+# while i <= 10:
+#   if i == 5:
+#     break
+#   print(i)
+#   i += 1
+
+# i = 1
+# while i < 5:
+#   i += 1
+#   if i == 3:
+#     continue
+#   print(i)
+
+# enumerate (cria índice):
+
+# palavra = 'tranquilo'
+# for indice, letra in enumerate(palavra):
+#   print(indice, letra)
+
+l1 = ['eat', 'sleep', 'repeat']
+s1 = 'geek'
+
+obj1 = enumerate(l1)
+obj2 = enumerate(s1)
+
+print(f'Return type: {obj1}')
+print(list(enumerate(l1)))
+print(list(enumerate(s1, 2)))
