@@ -46,3 +46,28 @@
 # for elemento in range(len('STRING')):
 #   print('Estamos no elemento', elemento)
 
+# iterar sobre uma lista de números e calcular a soma
+# numeros = [1, 2, 3, 4, 5]
+# soma = 0
+# for num in numeros:
+#   soma += num
+
+# print(f'A soma é {soma}.')
+
+# iterar sobre uma string e contar o número de ocorrências
+# texto = 'hello, world'
+# contagem = 0
+# for letra in texto:
+#   if letra =='l':
+#    contagem += 1
+   
+# print(f'A contagem de ocorrências da letra é {contagem}.')
+
+# iterar sobre uma lista e filtrar os elementos pares
+numeros = [1, 2, 3, 4, 5]
+pares = []
+for num in numeros:
+  if num % 2 == 0:
+    pares.append(num)
+
+print(f'Os números pares são {pares}.')
