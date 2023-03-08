@@ -1,7 +1,5 @@
-titular = ''
-conta = ''
+titular = dict()
 saldo_conta = 0
-saldo_poupanca = 0
 opcao = ''
 
 while opcao != 4:
@@ -18,15 +16,45 @@ while opcao != 4:
     print('-' * 30)
 
     opcao = int(input('Qual a sua opção? '))
+    print('=' * 30)
 
     if opcao == 0:
-        titular = str(input('Digite seu nome: '))
-        conta = str(input('Digite o número da sua conta (3 dígitos): '))
-        deposito = float(input('Efetue um depósito para criar uma conta: R$ '))
-        saldo_conta += deposito
+        print('CADASTRO DE CLIENTE')
+        print('-' * 30)
+        titular['nome'] = str(input('Digite seu nome: '))
+        titular['conta'] = str(input('Digite o número da sua conta: '))
+        titular['saldo'] = float(
+            input('Efetue um depósito para criar uma conta: R$ '))
+        saldo_conta += titular['saldo']
         if saldo_conta == 0 or saldo_conta == '':
             print('Conta não criada.')
         else:
-            print('-' * 50)
-            print(
-                f'Nome: {titular}\nConta: {conta}\nValor do depósito: R$ {saldo_conta}\nConta criada com sucesso!')
+            print('-' * 30)
+            print('Conta criada com sucesso!')
+
+    elif (opcao == 1):
+        if (titular != ""):
+            print("+--------------------------------------------------+")
+            print("DADOS DA CONTA CORRENTE")
+            print("+--------------------------------------------------+")
+            print(titular)
+
+    elif (opcao == 2):
+        if (titular != ""):
+            deposito = float(input("Valor do depósito: "))
+            print('-' * 30)
+            titular['saldo'] += deposito
+            print("Depósito efetuado com sucesso!")
+
+    elif (opcao == 3):
+        if (titular != ""):
+            valor_saque = float(input("Valor do saque: R$ "))
+        if (valor_saque <= titular['saldo']):
+            titular['saldo'] -= valor_saque
+            print("Saque efetuado com sucesso!")
+        else:
+            print("Saldo insuficiente!")
+            print("Seu saldo é R$", titular['saldo'])
+
+    else:
+        print("O Banco Fuctura agradece a preferência!")
