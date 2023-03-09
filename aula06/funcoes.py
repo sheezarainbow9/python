@@ -14,10 +14,15 @@
 # resultado = subtracao(9, 6)
 # print(f'Resultado da subtração: {resultado}')
 
-def num_par(a):
-  if a % 2 == 0:
-    print(f'O número {a} é PAR.')
-  else:
-    print(f'O número {a} é ÍMPAR.')
+# def num_par(a):
+#   if a % 2 == 0:
+#     print(f'O número {a} é PAR.')
+#   else:
+#     print(f'O número {a} é ÍMPAR.')
 
-num_par(int(input('Digite um número: ')))
+# num_par(int(input('Digite um número: ')))
+
+# def print_nome(nome):
+#     print(f'O nome é {nome}.')
+
+# print_nome('carlos')
