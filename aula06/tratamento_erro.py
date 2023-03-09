@@ -17,8 +17,9 @@ v2 = [2, 0, 4, 8, 0]
 #     print('Zero não é divisível; as listas tem tamanhos diferentes.')
 
 for i in range(len(v1)):
-  try:
-    div = v1[i]/v2[i]
-    print('%d / %d = %d' %(v1[i], v2[i], div))
-  except:
-    print('Deu erro.') # não é boa prática. tente saber o erro a ser tratado antes de usar.
+    try:
+        div = v1[i] / v2[i]
+        print('%d / %d = %d' % (v1[i], v2[i], div))
+    except:
+        # Não é boa prática. Tente saber o erro a ser tratado antes de usar.
+        print('Deu erro.')
