@@ -16,8 +16,8 @@
 
 def num_par(a):
   if a % 2 == 0:
-    print(f'{a} é PAR.')
+    print(f'O número {a} é PAR.')
   else:
     print(f'O número {a} é ÍMPAR.')
 
-num = num_par(4)
+num_par(int(input('Digite um número: ')))
