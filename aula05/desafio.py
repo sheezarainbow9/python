@@ -22,7 +22,7 @@ while opcao != 4:
         print('CADASTRO DE CLIENTE')
         print('-' * 30)
         titular['nome'] = str(input('Digite seu nome: '))
-        titular['conta'] = str(input('Digite o número da sua conta: '))
+        titular['conta'] = int(input('Digite o número da sua conta:'))
         titular['saldo'] = float(
             input('Efetue um depósito para criar uma conta: R$ '))
         saldo_conta += titular['saldo']
