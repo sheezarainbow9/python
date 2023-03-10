@@ -32,3 +32,13 @@
 # taxa = float(input('Digite a taxa de imposto: '))
 # custo = float(input('Digite o custo: R$ '))
 # print(f'Valor com imposto: R${somaImposto(taxa, custo):.2f}')
+
+def sequencia(numero):
+  for numero in range(numero + 1):
+    for n in range(1, numero + 1):
+      print(f'{n}', end='')
+    print()
+
+
+numero = int(input('Digite um número: '))
+sequencia(numero)
