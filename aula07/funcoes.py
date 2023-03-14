@@ -16,13 +16,13 @@ class Pessoa:
         self.distancia 
         
 
-pessoa = Pessoa('Maria', 36, 5)
-pessoa.aniversario()
-pessoa.passos()
+pessoa = Pessoa('Maria', 36, 15)
+# pessoa.aniversario()
+# pessoa.passos()
 
 pessoa2 = Pessoa('João', 40, 6)
-pessoa2.aniversario()
-pessoa2.passos()
+# pessoa2.aniversario()
+# pessoa2.passos()
 
 print(f'{pessoa2.nome} tem {pessoa2.idade} anos e {pessoa.nome} tem {pessoa.idade}.')
 print(f'{pessoa2.nome} andou {pessoa2.distancia}km hoje.')
