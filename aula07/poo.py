@@ -32,21 +32,23 @@ class Carro:
         self.ano = ano
 
     def idade(self):
-        pass
+        print(
+            f'O carro da cor {self.cor} é do ano de {self.ano}.')
 
     def tipo(self):
-        pass
+        print(
+            f'O carro da cor {self.cor}, do ano de {self.ano} é um utilitário.')
 
 
 class Nome(Carro):
     def idade(self):
-        print(
-            f'O carro da cor {self.cor} é do ano de {self.ano}.')
+        super().idade()
+
 
 class Utilidade(Carro):
     def tipo(self):
-        print(
-            f'O carro da cor {self.cor}, do ano de {self.ano} é um utilitário.')
+        super().tipo()
+
 
 carro1 = Nome('verde', 2015)
 carro1.tipo()
