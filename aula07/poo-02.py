@@ -1,4 +1,4 @@
-# Super() -> traz os métodos da classe pai para a classe filho.
+# Super() -> traz os métodos da classe pai para a classe filho (herança).
 
 class Carro:
     def __init__(self, nome) -> None:
