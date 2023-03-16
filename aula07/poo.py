@@ -28,32 +28,37 @@
 
 class Carro:
     def __init__(self, cor, ano):
-        self.cor = cor
-        self.ano = ano
+        self.__cor = cor
+        self.__ano = ano
 
-    def idade(self):
-        print(
-            f'O carro da cor {self.cor} é do ano de {self.ano}.')
+    def get_idade(self):
+        return self.__ano
 
-    def tipo(self):
-        print(
-            f'O carro da cor {self.cor}, do ano de {self.ano} é um utilitário.')
+    def set_idade(self, novo_ano):
+        self.__ano = novo_ano
+    
+    def get_cor(self):
+        return self.__cor
 
-
-class Nome(Carro):
-    def idade(self):
-        super().idade()
-
-
-class Utilidade(Carro):
-    def tipo(self):
-        super().tipo()
+    def set_cor(self, nova_cor):
+        self.__cor = nova_cor
 
 
-carro1 = Nome('verde', 2015)
-carro1.tipo()
-carro1.idade()
+# class Nome(Carro):
+#     def idade(self):
+#         super().idade()
 
-carro2 = Utilidade('azul', 2020)
-carro2.tipo()
-carro2.idade()
+
+# class Utilidade(Carro):
+#     def tipo(self):
+#         super().tipo()
+
+
+carro1 = Carro('verde', 2015)
+print(carro1.get_cor())
+carro1.set_cor('azul')
+print(carro1.get_cor())  
+
+# carro2 = Utilidade('azul', 2020)
+# carro2.tipo()
+# carro2.idade()
