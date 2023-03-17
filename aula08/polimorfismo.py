@@ -51,21 +51,22 @@ class Forma:
         self.altura = altura
         self.raio = raio
         
-    def area_retangulo(self):
-      return self.largura * self.altura
-
-    def area_circulo(self):
-      return 3.14 * self.raio ** 2
+    def area(self):
+      pass
 
 class Retangulo(Forma):
     def area(self):
-      super().area_retangulo()
+      return self.altura * self.largura
 
 class Circulo(Forma):
-    def area(self):
-      super().area_circulo()
+  def area(self):
+    return 3.14 * self.raio ** 2
 
 
-formas = [Retangulo(2, 3), Circulo(1)]
-for forma in formas:
-    print(forma.area())
+r1 = Retangulo(1, 2, 3)
+print(r1.area())
+
+c1 = Circulo(3, 2, 1)
+print(c1.area())
+
+
